@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.info-section {
+    width: 100%;
+    background: #1c1c3c;
+    color: white;
+    padding: 30px;  /* Increased padding */
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+
+.info-section h1 {
+    font-size: 2.2rem; /* Slightly increased font size */
+    font-weight: 700;
+}
+
+.info-section p {
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.form-section {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #6c63ff;
+    background: white;
+}
+
+button {
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    background: #6c63ff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5145cd;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #5145cd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+}
