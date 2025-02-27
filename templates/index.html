@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="info-section">
+            <h1>Rainfall Prediction</h1>
+            <p>Enter the required weather parameters to predict rainfall.</p>
+        </div>
+
+        <div class="form-section">
+            <h2>Start Your Prediction</h2>
+            <form action="{{ url_for('predict') }}" method="POST">
+                <label for="pressure">Pressure (hPa)</label>
+                <input type="number" step="0.01" id="pressure" name="pressure" required>
+
+                <label for="dewpoint">Dew Point (°C)</label>
+                <input type="number" step="0.01" id="dewpoint" name="dewpoint" required>
+
+                <label for="humidity">Humidity (%)</label>
+                <input type="number" step="0.01" id="humidity" name="humidity" required>
+
+                <label for="cloud">Cloud Cover (%)</label>
+                <input type="number" step="0.01" id="cloud" name="cloud" required>
+
+                <label for="sunshine">Sunshine (hours)</label>
+                <input type="number" step="0.01" id="sunshine" name="sunshine" required>
+
+                <label for="winddirection">Wind Direction (°)</label>
+                <input type="number" step="0.01" id="winddirection" name="winddirection" required>
+
+                <label for="windspeed">Wind Speed (km/h)</label>
+                <input type="number" step="0.01" id="windspeed" name="windspeed" required>
+
+                <button type="submit">Predict Rainfall</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

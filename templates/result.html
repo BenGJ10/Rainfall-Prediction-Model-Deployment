@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="info-section">
+                <h1>Rainfall Prediction</h1>
+            </div>
+            <div class="form-section">
+                <h2>Prediction Result</h2>
+                {% if error %}
+                    <p class="error">Error: {{ error }}</p>
+                {% else %}
+                    <p class="success"><strong>{{ 'It\'ll Rain' if prediction != 0 else 'It\'ll Not Rain' }}</strong></p>
+                {% endif %}
+                <a href="{{ url_for('home') }}" class="back-button">Go Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
