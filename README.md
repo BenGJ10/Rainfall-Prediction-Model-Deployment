@@ -1,20 +1,20 @@
-# 🌧️ Rainfall Prediction Model Deployment
+# Rainfall Prediction Model Deployment
 
-## 📌 Project Overview  
+## Project Overview  
 This project aims to **predict rainfall** using various **atmospheric parameters** such as temperature, humidity, pressure, and wind speed. The machine learning model is built using **Random Forest Classifier**, trained on the `rainfall.csv` dataset from Kaggle. The model is deployed using **Flask** and will be soon hosted on **AWS EC2**.
 
 ---
 
-## 🚀 Features  
-✅ **Rainfall Prediction:** Predicts the likelihood of rainfall based on input weather conditions.  
-✅ **User-Friendly Web Interface:** Interactive form to input weather parameters.  
-✅ **Flask-Based Backend:** Lightweight and efficient API for model inference.  
-✅ **Modern UI:** Clean and professional front-end using **HTML, CSS, and JavaScript**.  
-✅ **Deployment Ready:** Designed for deployment on **AWS EC2**. Will deploy soon.  
+## Features  
+**Rainfall Prediction:** Predicts the likelihood of rainfall based on input weather conditions.  
+**User-Friendly Web Interface:** Interactive form to input weather parameters.  
+**Flask-Based Backend:** Lightweight and efficient API for model inference.  
+**Modern UI:** Clean and professional front-end using **HTML, CSS, and JavaScript**.  
+**Deployment Ready:** Designed for deployment on **AWS EC2**. Will deploy soon.  
 
 ---
 
-## 📂 Project Structure  
+## Project Structure  
 
 ```
 Rainfall-Prediction-Model-Deployment/
@@ -30,23 +30,23 @@ Rainfall-Prediction-Model-Deployment/
 
 ---
 
-## 🛠️ Tech Stack  
+## Tech Stack  
 
-### 🔹 **Machine Learning**  
-- Python 🐍  
+### **Machine Learning**  
+- Python 
 - Pandas, NumPy  
 - Scikit-Learn (Random Forest)  
 
-### 🔹 **Web Framework**  
+### **Web Framework**  
 - Flask (for API and backend)  
 - HTML, CSS, JavaScript (for frontend)  
 
-### 🔹 **Deployment**  
+### **Deployment**  
 - Soon on AWS..
 
 ---
 
-## 📊 Dataset  
+## Dataset  
 
 The dataset (`rainfall.csv`) contains the following **features**:  
 
@@ -67,27 +67,27 @@ The dataset (`rainfall.csv`) contains the following **features**:
 
 ---
 
-## ⚙️ Installation and Setup  
+## Installation and Setup  
 
-### 1️⃣ Clone the Repository  
+### 1. Clone the Repository  
 ```bash
 git clone https://github.com/BenGJ10/Rainfall-Prediction-Model-Deployment.git
 cd Rainfall-Prediction-Model-Deployment
 ```
 
-### 2️⃣ Create a Virtual Environment (optional but recommended)  
+### 2. Create a Virtual Environment (optional but recommended)  
 ```bash
 python -m venv venv
 source venv/bin/activate   # On macOS/Linux
 venv\Scripts\activate      # On Windows
 ```
 
-### 3️⃣ Install Dependencies  
+### 3. Install Dependencies  
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Run Flask Application  
+### 4. Run Flask Application  
 ```bash
 python main.py
 ```
@@ -96,20 +96,15 @@ Visit **`http://127.0.0.1:5000/`** in your browser.
 ---
 
 
-## 🤝 Contributing  
-🔹 Fork the repo  
-🔹 Create a new branch (`git checkout -b feature-name`)  
-🔹 Commit your changes (`git commit -m "Added new feature"`)  
-🔹 Push the branch (`git push origin feature-name`)  
-🔹 Open a Pull Request  
+## Contributing  
+- Fork the repo  
+- Create a new branch (`git checkout -b feature-name`)  
+- Commit your changes (`git commit -m "Added new feature"`)  
+- Push the branch (`git push origin feature-name`)  
+- Open a Pull Request  
 
 ---
 
-## 📝 License  
-This project is **open-source** and free to use under the **MIT License**.  
-
----
-
-## 📩 Contact  
-📧 Email: [bengj1015@gmail.com](mailto:bengj1015@gmail.com)  
-🔗 GitHub: [BenGJ10](https://github.com/BenGJ10)  
+## Contact  
+**Email**: [bengj1015@gmail.com](mailto:bengj1015@gmail.com)  
+**GitHub**: [BenGJ10](https://github.com/BenGJ10)  
